@@ -6,7 +6,7 @@ export default function Note() {
   const [loading, setLoading] = useState(true);
   const [noteData, setNoteData] = useState(() => {
     const savedNote = localStorage.getItem("noteData");
-    return JSON.parse(savedNote);
+    return savedNote ? JSON.parse(savedNote) : [];
   });
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
