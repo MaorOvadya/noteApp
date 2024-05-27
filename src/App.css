@@ -1,0 +1,154 @@
+#root, * {
+  margin:0;
+  padding: 0;
+}
+
+.error {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 12px;
+  color: black;
+  text-transform: capitalize;
+  
+  
+}
+
+.logo {
+  text-align: left;
+  padding: 2rem;
+  text-transform: capitalize;
+  background-color:#001427;
+  color: #e5e5e5;
+}
+
+.main_container {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+
+}
+.containerNotes {
+  display: flex;
+  flex-direction: column;
+  width:-webkit-fill-available;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+}
+
+.containerNotesTitle {
+  font-size: 28px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  width: 100%;
+text-align: center;
+
+}
+.note-submission {
+  background-color: #708d81;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+  width: 30%;
+  margin: 0 20px;
+  border: 2px solid white;
+  border-radius: 16px;
+  height: 520px;
+}
+
+.note_header {
+  padding: 10px 0;
+}
+
+.text_title,.text_body   {
+  margin: 0 10px;
+  padding:10px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+}
+
+.trash:hover {
+  color: #495057;
+}
+
+.add_btn{
+  text-transform: capitalize;
+  margin-top: 30px;
+  padding: 10px 60px;
+  border-radius: 16px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: white;
+}
+
+.add_btn:hover{
+  border: 1px solid white;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: all 0.8s ease-in-out;
+}
+
+.page_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  width:-webkit-fill-available;
+  
+}
+.note_continer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  overflow: scroll;
+  background-color: #001427;
+  margin: 5px;
+}
+
+.pageTitle {
+  text-decoration: underline;
+  font-size: 16px;
+  padding-bottom: 5px ;
+}
+
+.note_article {
+  padding: 8px 8px ;
+  color: white;
+}
+.title {
+  font-size: 14px;
+  text-decoration: underline;
+  padding-bottom: 5px;
+}
+.body {
+  text-decoration: none;
+  font-size: 12px;
+  overflow: scroll;
+  word-break: break-all;
+}
+
+.trash {
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.loading {
+  margin: auto;
+  font-size: 20px;
+}
