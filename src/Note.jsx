@@ -5,7 +5,9 @@ import { FaTrash } from "react-icons/fa";
 export default function Note() {
   const [noteData, setNoteData] = useState(() => {
     const savedNote = localStorage.getItem("noteData");
-    return savedNote ? JSON.parse(savedNote) : [];
+    return savedNote
+      ? JSON.parse(savedNote)
+      : [{ title: "birthday", body: "buy cake" }];
   });
 
   const [loading, setLoading] = useState(true);
