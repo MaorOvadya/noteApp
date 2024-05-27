@@ -122,7 +122,7 @@ export default function Note() {
           <p className="containerNotesTitle">notes</p>
           {loading ? (
             <p className="loading">Loading notes...</p>
-          ) : noteData.length === 0 ? (
+          ) : !noteData || noteData.length === 0 ? (
             <p className="loading">No notes to show</p>
           ) : (
             noteData.map((note, index) => (
