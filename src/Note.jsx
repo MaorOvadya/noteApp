@@ -42,7 +42,7 @@ export default function Note() {
   };
 
   function handleSubmit(e) {
-    // e.preventDefault();
+    e.preventDefault();
 
     // reset Values to empty string
     setBodyError("");
