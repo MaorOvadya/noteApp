@@ -21,8 +21,6 @@ export default function Note() {
     }, 1200);
   }, []);
 
-  //   useEffect(() => {}, [titleError, bodyError]);
-
   useEffect(() => {
     localStorage.setItem("noteData", JSON.stringify(noteData));
   }, [noteData]);
@@ -56,7 +54,7 @@ export default function Note() {
 
     // validation logic with regex
     const titleRegex = /^[a-zA-Z\s]{2,}$/;
-    const bodyRegex = /^[a-zA-Z0-9\s]{2,}$/;
+    const bodyRegex = /^[a-zA-Z0-9\s,.\n]{2,}$/;
 
     let hasError = false;
 

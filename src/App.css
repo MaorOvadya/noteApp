@@ -18,12 +18,12 @@
   text-align: left;
   padding: 2rem;
   text-transform: capitalize;
-  background-color:#001427;
-  color: #e5e5e5;
+  background-color:#007f5f;
+  color: white;
 }
 
 .main_container {
-  background-color: #ffffff;
+  background-color: #fae588;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -48,7 +48,7 @@ text-align: center;
 
 }
 .note-submission {
-  background-color: #708d81;
+  background-color: #007f5f;
   text-align: center;
   padding: 10px 20px;
   display: flex;
@@ -57,7 +57,7 @@ text-align: center;
   gap: 10px;
   width: 30%;
   margin: 0 20px;
-  border: 2px solid white;
+  border: 2px solid #001427;
   border-radius: 16px;
   height: 520px;
 }
@@ -75,9 +75,6 @@ text-align: center;
   background-color: white;
 }
 
-.trash:hover {
-  color: #495057;
-}
 
 .add_btn{
   text-transform: capitalize;
@@ -92,7 +89,7 @@ text-align: center;
 .add_btn:hover{
   border: 1px solid white;
   cursor: pointer;
-  background-color: black;
+  background-color: #001427;
   color: white;
   transition: all 0.8s ease-in-out;
 }
@@ -112,10 +109,8 @@ text-align: center;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-bottom: 1px solid black;
-  border-radius: 5px;
   overflow: scroll;
-  background-color: #001427;
+  background-color: white;
   margin: 5px;
 }
 
@@ -127,7 +122,7 @@ text-align: center;
 
 .note_article {
   padding: 8px 8px ;
-  color: white;
+  color: #001427;
 }
 .title {
   font-size: 14px;
@@ -145,8 +140,13 @@ text-align: center;
   float: right;
   padding: 10px;
   font-size: 20px;
-  color: white;
+  color: #778da9;
 }
+
+.trash:hover {
+  color: #415a77;
+}
+
 
 .loading {
   margin: auto;
