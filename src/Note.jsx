@@ -44,7 +44,7 @@ export default function Note() {
   function handleSubmit(e) {
     console.log("Event object:", e);
 
-    if (e || typeof e.preventDefault !== "function") {
+    if (e || typeof e.preventDefault === "function") {
       e.preventDefault();
     } else {
       return console.log("error", e);
@@ -70,8 +70,7 @@ export default function Note() {
     }
 
     if (!hasError) {
-      const newNote = { title: title, body: body };
-      setNoteData([...noteData, newNote]);
+      setNoteData([...noteData, { title, body }]);
       setBody("");
       setTitle("");
     } else {
