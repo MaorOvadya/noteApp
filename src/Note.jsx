@@ -55,11 +55,11 @@ export default function Note() {
     let hasError = false;
 
     if (!titleRegex.test(title)) {
-      setTitleError("title is missing and cannot contain numbers");
+      setTitleError("Title is missing or cannot contain numbers");
       hasError = true;
     }
     if (!bodyRegex.test(body)) {
-      setBodyError("text is missing");
+      setBodyError("Text is missing");
       hasError = true;
     }
 
@@ -69,7 +69,7 @@ export default function Note() {
       setBody("");
       setTitle("");
     } else {
-      console.log("problem with submitting");
+      console.log("Problem with submitting");
     }
   }
 
