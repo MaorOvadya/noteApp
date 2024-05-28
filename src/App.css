@@ -1,6 +1,7 @@
 #root, * {
   margin:0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .error {
@@ -8,10 +9,8 @@
   text-align: center;
   font-family:'Times New Roman', Times, serif;
   font-size: 12px;
-  color: black;
-  text-transform: capitalize;
-  
-  
+  color: #001427;
+  text-transform: capitalize;  
 }
 
 .logo {
@@ -36,7 +35,6 @@
   width:-webkit-fill-available;
   align-items: center;
   border-bottom: 1px solid black;
-
 }
 
 .containerNotesTitle {
@@ -57,13 +55,14 @@ text-align: center;
   gap: 10px;
   width: 30%;
   margin: 0 20px;
-  border: 2px solid #001427;
+  border: 1px solid #001427;
   border-radius: 16px;
   height: 520px;
 }
 
 .note_header {
   padding: 10px 0;
+  color: white;
 }
 
 .text_title,.text_body   {
@@ -151,4 +150,11 @@ text-align: center;
 .loading {
   margin: auto;
   font-size: 20px;
+}
+
+.footer {
+  background-color: #007f5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
