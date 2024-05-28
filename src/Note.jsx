@@ -33,29 +33,22 @@ export default function Note() {
   };
 
   const handleInputChangeError = (field) => {
-    switch (field) {
-      case "title":
-        setTitleError("");
-        break;
-      case "body":
-        setBodyError("");
-        break;
-
-      default:
-        break;
+    if (field === "title") {
+      setTitleError("");
+    }
+    if (field === "body") {
+      setBodyError("");
     }
   };
 
   function handleSubmit(e) {
-    e.preventDefault();
-
     // reset Values to empty string
     setBodyError("");
     setTitleError("");
 
     // validation logic with regex
-    const titleRegex = /^[a-zA-Z]{2,}$/;
-    const bodyRegex = /^.{2,}$/;
+    const titleRegex = /^[a-zA-Z\s]{2,}$/;
+    const bodyRegex = /^[a-zA-Z0-9\s]{2,}$/;
 
     let hasError = false;
 
@@ -69,14 +62,13 @@ export default function Note() {
     }
 
     if (!hasError) {
-      if (Array.isArray(noteData)) {
-        const newNote = { title, body };
-        setNoteData([...noteData, newNote]);
-        setBody("");
-        setTitle("");
-      } else {
-        console.log("problem with submitting");
-      }
+      e.preventDefault();
+      const newNote = { title, body };
+      setNoteData([...noteData, newNote]);
+      setBody("");
+      setTitle("");
+    } else {
+      console.log("problem with submitting");
     }
   }
 
