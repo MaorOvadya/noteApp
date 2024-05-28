@@ -52,8 +52,6 @@ export default function Note() {
     e.preventDefault();
 
     // reset Values to empty string
-    setTitle("");
-    setBody("");
     setBodyError("");
     setTitleError("");
 
