@@ -42,7 +42,13 @@ export default function Note() {
   };
 
   function handleSubmit(e) {
+    console.log("Event object:", e);
     e.preventDefault();
+
+    if (!e || typeof e.preventDefault !== "function") {
+      console.log("error", e);
+      return;
+    }
 
     // reset Values to empty string
     setBodyError("");
@@ -64,7 +70,7 @@ export default function Note() {
     }
 
     if (!hasError) {
-      const newNote = { title, body };
+      const newNote = { title: title, body: body };
       setNoteData([...noteData, newNote]);
       setBody("");
       setTitle("");
