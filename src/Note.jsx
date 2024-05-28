@@ -23,7 +23,7 @@ export default function Note() {
     }, 1200);
   }, []);
 
-  useEffect(() => {}, [titleError, bodyError]);
+  //   useEffect(() => {}, [titleError, bodyError]);
 
   useEffect(() => {
     localStorage.setItem("noteData", JSON.stringify(noteData));
