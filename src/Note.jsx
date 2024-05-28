@@ -72,7 +72,7 @@ export default function Note() {
 
     if (!hasError) {
       const newNote = { title, body };
-      setNoteData((prevNewNote) => [...prevNewNote, newNote]);
+      setNoteData((prevNewData) => [...prevNewData, newNote]);
       setBody("");
       setTitle("");
     } else {
