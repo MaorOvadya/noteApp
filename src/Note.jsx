@@ -34,7 +34,7 @@ export default function Note() {
     setNoteData(updatedNotes);
   };
 
-  const handleInputChnageError = (field) => {
+  const handleInputChangeError = (field) => {
     switch (field) {
       case "title":
         setTitleError("");
@@ -96,7 +96,7 @@ export default function Note() {
           </label>
           <input
             onChange={(e) => setTitle(e.target.value)}
-            onFocus={() => handleInputChnageError("title")}
+            onFocus={() => handleInputChangeError("title")}
             className="text_title"
             type="text"
             id="title"
@@ -111,7 +111,7 @@ export default function Note() {
           </label>
           <textarea
             onChange={(e) => setBody(e.target.value)}
-            onFocus={() => handleInputChnageError("body")}
+            onFocus={() => handleInputChangeError("body")}
             className="text_body"
             type="text"
             id="body"
