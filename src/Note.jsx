@@ -44,11 +44,11 @@ export default function Note() {
   function handleSubmit(e) {
     console.log("Event object:", e);
 
-    if (!e || typeof e.preventDefault !== "function") {
-      console.log("error", e);
-      return;
+    if (e || typeof e.preventDefault !== "function") {
+      e.preventDefault();
+    } else {
+      return console.log("error", e);
     }
-    e.preventDefault();
 
     // reset Values to empty string
     setBodyError("");
