@@ -42,8 +42,7 @@ export default function Note() {
   };
 
   function handleSubmit(e) {
-    console.log("event object", e);
-    // e.preventDefault();
+    e.preventDefault();
 
     // reset Values to empty string
     setBodyError("");
