@@ -71,16 +71,13 @@ export default function Note() {
     }
 
     if (!hasError) {
-      if (!Array.isArray(noteData)) {
-        setNoteData([...noteData, { title: title, body: body }]);
-      } else {
-        console.log("not array");
-      }
-      setBody("");
-      setTitle("");
+      setNoteData([...noteData, { title: title, body: body }]);
+      console.log("not array");
     } else {
       console.log("problem with submitting");
     }
+    setBody("");
+    setTitle("");
   }
 
   return (
