@@ -78,6 +78,8 @@ export default function Note() {
       }
       setBody("");
       setTitle("");
+    } else {
+      console.log("problem with submitting");
     }
   }
 
