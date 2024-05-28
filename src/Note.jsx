@@ -42,6 +42,8 @@ export default function Note() {
   };
 
   function handleSubmit(e) {
+    e.preventDefault();
+
     // reset Values to empty string
     setBodyError("");
     setTitleError("");
@@ -62,7 +64,6 @@ export default function Note() {
     }
 
     if (!hasError) {
-      e.preventDefault();
       const newNote = { title, body };
       setNoteData([...noteData, newNote]);
       setBody("");
